@@ -4,13 +4,13 @@ import sys
 infile = open(sys.argv[1], 'r')
 
 def replacer(matchobj):
-    name = matchobj.group(0).replace(':','')
+    name = matchobj.group(0).replace(': ','')
     return '<v %s>' % name
 
 outcontent = ''
 for line in infile:
   stripline = line.strip()
-  newline = re.sub(r'([a-zA-Z].*?:)', replacer, stripline)
+  newline = re.sub(r'([a-zA-Z].*?: )', replacer, stripline)
   outcontent += newline + '\n'
 infile.close()
 
