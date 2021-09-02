@@ -16,5 +16,5 @@ WEBVTT
 
 1
 00:00:04.440 --> 00:00:14.639
-<v Andrew Nelson (he)> Hello and welcome to my ted talk
+<v Andrew Nelson (he)>Hello and welcome to my ted talk
 ```
